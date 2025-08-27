@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <center>
+    
+    <form action="#" method="post" enctype="multipart/form-data">
+        <table border="1" cellpadding="8" cellspacing="0">
+            <tr><td colspan="2"><center><marquee >Registration Form</marquee></center></td></tr>
+            <tr>
+                <td colspan="2"><marquee direction="right">Fill Details Below</marquee></td>
+            </tr>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+
+         
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age" min="1" max="100" required></td>
+            </tr>
+
+          
+            <tr>
+                <td><label for="phone">Phone No:</label></td>
+                <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required></td>
+            </tr>
+
+         
+            <tr>
+                <td>Course:</td>
+                <td>
+                    <input type="radio" name="course" value="A"> A
+                    <input type="radio" name="course" value="B"> B
+                    <input type="radio" name="course" value="C"> C
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobby:</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="h1"> h1
+                    <input type="checkbox" name="hobby" value="h2"> h2
+                    <input type="checkbox" name="hobby" value="h3"> h3
+                    <input type="checkbox" name="hobby" value="h4"> h4
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td><label for="password">Temp Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+
+            
+            <tr>
+                <td><label for="dob">DOB:</label></td>
+                <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+
+           
+            <tr>
+                <td><label for="domain">Domain Expert:</label></td>
+                <td>
+                    <select id="domain" name="domain">
+                        <option value="web">Web</option>
+                        <option value="ai">AI</option>
+                        <option value="ml">ML</option>
+                        <option value="cloud">Cloud</option>
+                    </select>
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td><label for="result">Upload Result:</label></td>
+                <td><input type="file" id="result" name="result"></td>
+            </tr>
+
+           
+            <tr>
+                <td><label for="remarks">Remarks:</label></td>
+                <td><textarea id="remarks" name="remarks" rows="4" cols="30"></textarea></td>
+            </tr>
+
+        
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </center>
+</body>
+</html>
